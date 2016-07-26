@@ -5,6 +5,10 @@
 
 <body>
 
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
     {% include nav.html %}
 
     {{ content }}
