@@ -4,6 +4,7 @@ header-img: img/home-bg.jpg
 email: al8x.romanov@gmail.com
 copyright_name: Alexander Romanov
 description: "Test Automation notes and experiences"
+name: "Alexander Romanov's blog"
 baseurl: ""
 url: "https://alexromanov.github.io"
 twitter_username: al8xr
