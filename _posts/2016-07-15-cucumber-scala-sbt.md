@@ -173,7 +173,7 @@ Place it into src/test/steps TestRunner scala class.
    "json:target/cucumber/test-report.json",  
    "junit:target/cucumber/test-report.xml")  
  )  
- class CucumberRunner {}  
+ class TestRunner {}  
 {% endhighlight %}
 
 **NOTE:** plugin option allows you to set runner to produce test output in the various formats, such as html, json and xml.
