@@ -43,7 +43,7 @@ Just follow the File -> New -> Project -> Scala -> SBT - based project.
 Wait for some minutes while project is created.
 In result project will be with the following structure:
 
-TODO: add picture with project structure
+![Project Structure]({{ site.baseurl }}/img/project_structure.png)
 
 ### 5. Handle project dependencies
 
