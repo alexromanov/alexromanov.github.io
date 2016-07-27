@@ -5,6 +5,8 @@
 
 <body>
 
+	{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+
     {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
