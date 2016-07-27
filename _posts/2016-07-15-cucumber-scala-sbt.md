@@ -3,6 +3,7 @@ layout: post
 title:  "The one where Cucumber meets Scala with SBT"
 date:   2016-07-15 09:40:39 +0300
 author: "Alexander Romanov"
+description: "In the following post I will show how to configure a new project in order to write integration tests with Cucumber, Scala and SBT build tool."
 
 ---
 
