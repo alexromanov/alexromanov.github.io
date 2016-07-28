@@ -14,7 +14,7 @@ Intellij IDEA 2016.2 CE is used as IDE
 **Target audience:** QA Automation engineers / developers
 
 DISCLAIMER: It is assumed that reader has some experience with Behavior Driven Development approach and
-a Cucumber test tool. For full please refer to official [Cucumber website][cucumber-site].
+a Cucumber test tool. For full information please refer to official [Cucumber website][cucumber-site].
 
 ### A little bit of theory
 
