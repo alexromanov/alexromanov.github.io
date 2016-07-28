@@ -97,7 +97,7 @@ When you run scenario, logs will show that the value 1.2 is transformed by Cucum
 
 Here are the steps for implementing your custom transformer for BigDecimal value
 
-### 1. Create your custom trnasformer class for BidDecimal values  
+### 1. Create your custom trnasformer class for BigDecimal values  
 
 {% highlight scala %}
 
