@@ -3,11 +3,11 @@ layout: post
 title:  "The one with custom transformer for Cucumber in Scala"
 date:   2016-07-28 10:09:45 +0300
 author: "Alexander Romanov"
-description: "In the following post I will show a quick tip on now you can write a custom transformer with Scala and Cucumber tool"
+description: "In the following post I will show a quick tip on how you can write a custom transformer with Scala and Cucumber tool"
 
 ---
 
-_In the following post I will show a quick tip on now you can write a custom transformer in order to parse decimal value from your step_  
+_In the following post I will show a quick tip on how you can write a custom transformer in order to parse decimal value from your Cucumber scenario step_  
 
 Intellij IDEA 2016.2 CE is used as IDE
 
@@ -18,7 +18,7 @@ a Cucumber test tool. For full information please refer to official [Cucumber we
 
 ### A little bit of theory
 
-By default Cucumber recognizes only two possible parameters which come from your steps: strings (single and double-quoted) and integers. 
+By default Cucumber recognizes only two possible parameters which come from your steps: strings (double-quoted) and integers. 
 
 If Cucumber parser sees strings:
 
@@ -30,7 +30,8 @@ If Cucumber parser sees strings:
 Then it will propose to the user the generated code with sample parameters of type String:
 
 {% highlight scala %}
-  Then("""^Cucumber should parse "([^"]*)" as string parameter$"""){ (arg0:String) =>
+  Then("""^Cucumber should parse "([^"]*)" as string parameter$"""){  
+  (arg0:String) =>
     //// Write code here that turns the phrase above into concrete actions  
 
     throw new PendingException()
@@ -47,7 +48,8 @@ The same is for integer values in scenario step:
 And as a result:
 
 {% highlight scala %}
-  Then("""^Cucumber should parse (\d+) and (\d+) as integer parameters$"""){ (arg0:Int, arg1:Int) =>  
+  Then("""^Cucumber should parse (\d+) and (\d+) as integer parameters$"""){  
+  (arg0:Int, arg1:Int) =>  
     //// Write code here that turns the phrase above into concrete actions  
 
     throw new PendingException()
@@ -58,9 +60,9 @@ And as a result:
 
 ### What if you want something more complex?
 There are a lot of situations when complex data should be used as a parameter in scenario steps.
-It can be for example decimal value or your custom data type.   
+It can be, for example,  decimal value or your custom data type.   
 In [Cucumber for Java book][cucumber-for-java] can be found a well described example of getting Money object as a step parameter. Specific example is written in Java and can be found [here][java-cucumber-transformer-usage].  
-The main point is to write your custom class which extends Cucumber's [Transformer][cucumber-transformer] and then use it step implementations as annotation for specific parameter. 
+The main point is to write your custom class which extends Cucumber's [Transformer][cucumber-transformer] and then use it in step implementations as annotation for specific parameter. 
 
 {% highlight java %}
 import cucumber.api.Transformer;
@@ -76,7 +78,7 @@ public class MoneyConverter extends Transformer<Money> {
 {% endhighlight %}
 
 ### Okay, but can we write it on Scala? 
-In Scala language we can write our custom transformer as well. It is a little bit trickier, but pretty easy.  
+In Scala language we can write our custom transformer as well. It is a little bit trickier, but also not complicated.  
 
 For example we need to parse decimal value and use it our step
 
@@ -85,10 +87,11 @@ For example we need to parse decimal value and use it our step
     Then Cucumber should parse 1.2 with custom transformer
 {% endhighlight %}
 
-When you run scenario, logs will show that the value 1.2 is transformed by Cucumber as two integer parameters with a point delimeter.
+When you run scenario, logs show that the value 1.2 is transformed by Cucumber as two integer parameters with a point delimeter.
 
 {% highlight scala %}
-  Then("""^Cucumber should parse (\d+)\.(\d+) with custom trnaformer$"""){ (arg0:Int, arg1:Int) =>
+  Then("""^Cucumber should parse (\d+)\.(\d+) with custom trnaformer$"""){  
+  (arg0:Int, arg1:Int) =>
     //// Write code here that turns the phrase above into concrete actions  
 
     throw new PendingException()
@@ -121,15 +124,18 @@ case class MyBigDecimal(value: BigDecimal) {
 ### 2. Use custom transformer in Step Definitions
 
 {% highlight scala %}
-  Then("""^Cucumber should parse ([\d\.]*) with custom transformer$"""){ (decimalParameter: MyBigDecimal  
+  Then("""^Cucumber should parse ([\d\.]*) with custom transformer$"""){  
+  (decimalParameter: MyBigDecimal  
   @Transform(classOf[MyBigDecimalTransformer])) =>
     assert(decimalParameter.value == 1.2, "Unexpected result for decimal parameter")
   }
 {% endhighlight %}  
 
-**NOTE:** Pay attention on regular expression for single decimal value "([\d\.]*)" and also for usage your custom MyBigDecimal wrapper with Transform annotation.
+**NOTE:** Pay attention to the regular expression for single decimal value "([\d\.]*)" and also to the usage of your custom MyBigDecimal wrapper with @Transform annotation.
 
-For now you can write transformer for many custom data types in your Cucumber steps. 
+### Conclusion  
+
+For now you can write transformer whenever custom data types should be used in your Cucumber steps. 
 
 [cucumber-site]: https://cucumber.io/
 [cucumber-for-java]: https://amzn.com/1941222293
