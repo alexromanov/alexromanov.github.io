@@ -2,7 +2,7 @@
 layout: post
 title:  "How complex and challenging testing can be"
 date:   2017-04-06 21:25:47 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "In the following post I will talk about my experience of testing huge financial systems"
 
 ---

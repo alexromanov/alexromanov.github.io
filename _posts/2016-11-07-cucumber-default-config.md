@@ -2,7 +2,7 @@
 layout: post
 title:  "The one where scenario is run from feature file"
 date:   2016-11-07 10:09:45 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "In the following post I will share a quick tip on how to set up Idea to run scenario from feature file"
 
 ---

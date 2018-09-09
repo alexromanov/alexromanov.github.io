@@ -2,7 +2,7 @@
 layout: post
 title:  "The one with unique requests to web application"
 date:   2016-11-08 09:09:47 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "In the following post I will share a simple but useful script for generating requests to web application from various ip adresses"
 
 ---
