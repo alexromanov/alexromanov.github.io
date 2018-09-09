@@ -2,7 +2,7 @@
 layout: post
 title:  "Working with unix init scripts from Serenity"
 date:   2017-07-13 08:00:47 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "How to verify whether specific unix init script is running on remote machine?"
 
 ---

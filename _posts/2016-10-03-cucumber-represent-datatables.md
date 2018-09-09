@@ -2,7 +2,7 @@
 layout: post
 title:  "The one with Cucumber DataTables"
 date:   2016-10-03 10:09:45 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "In the following post I will explain what are the possible representations of DataTables in Cucumber"
 
 ---

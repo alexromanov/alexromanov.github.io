@@ -2,7 +2,7 @@
 layout: post
 title:  "The one where browser suddenly restarts with Serenity"
 date:   2017-02-06 09:09:47 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "In the following post I will share a quick tip which helps with resolving browser restart issue in Serenity framework"
 
 ---

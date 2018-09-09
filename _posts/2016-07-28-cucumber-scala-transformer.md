@@ -2,7 +2,7 @@
 layout: post
 title:  "The one with custom transformer for Cucumber in Scala"
 date:   2016-07-27 20:09:45 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "In the following post I will show a quick tip on now you can write a custom transformer with Scala and Cucumber tool"
 
 ---

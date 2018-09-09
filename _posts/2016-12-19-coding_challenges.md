@@ -2,7 +2,7 @@
 layout: post
 title:  "The one with coding challenges for newcomers"
 date:   2016-12-19 09:09:47 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "In the following post I will talk about resources for getting confidence in coding as newcomer test automation"
 
 ---

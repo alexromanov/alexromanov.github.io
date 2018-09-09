@@ -2,7 +2,7 @@
 layout: post
 title:  "Assuring REST with Serenity"
 date:   2017-04-22 08:00:47 +0300
-author: "Alexander Romanov"
+author: "Oleksandr Romanov"
 description: "Is it possible to test REST services with Serenity framework? Let's try to find it out!"
 
 ---
