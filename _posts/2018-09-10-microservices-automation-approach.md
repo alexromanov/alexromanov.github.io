@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tuning up test pyramid for microservices"
-date:   2018-09-10 08:00:47 +0300
+date:   2018-09-11 00:00:47 +0300
 author: "Oleksandr Romanov"
 description: "How canonical testing pyramid is changing as more and more applications adopt microservices architecture"
 header-img: "img/20180910/pyramid3.jpg"
@@ -30,7 +30,7 @@ But what about microservices?
 
 Microservices became really a mainstream type of architecture in a recent years. It is used for building a complex, loosely coupled and reliable backend systems.  
 
-![Project Structure]({{ site.baseurl }}/img/20180910/micros.png)
+![Project Structure]({{ site.baseurl }}/img/20180910/micros2.png)
 
 In a few words: instead of a huge monolithic backend system, which holds all the businees logic and databases, now we have a bunch of independently deployable services, which shares a part of business logic each.  
 
