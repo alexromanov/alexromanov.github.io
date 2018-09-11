@@ -1,66 +1,68 @@
 ---
 layout: post
 title:  "Tuning up test pyramid for microservices"
-date:   2018-09-10 00:00:47 +0300
+date:   2018-09-10 08:00:47 +0300
 author: "Oleksandr Romanov"
 description: "How canonical testing pyramid is changing as more and more applications adopt microservices architecture"
 header-img: "img/20180910/pyramid3.jpg"
 
 ---
 
-_This blog post is a starting point for a series regarding testing and automating microservices based systems._
+_This blog post is the first out of series dedicated to testing and automating microservices-based systems._
 
 ### Good old pyramid  
 
-Maybe, this is the most widespread scheme which is used in a lot of talks about testing and specifically, test automation. 
+Maybe, this is the most widespread scheme, which is used in a lot of talks about testing and, specifically, test automation. 
 
 ![Project Structure]({{ site.baseurl }}/img/20180910/old_pyramid.png)
 
 Yes - it is a test automation 'pyramid' (or triangle, if you wish :)) proposed by Mike Cohn in his book ['Succeeding with Agile'][agile].  
 
-Since 2009, it is a 'golden standard', when we speak about the right and effective ways of structuring our automated tests.  
+It is a 'golden standard' since 2009 when we are speaking about the right and effective ways of structuring our automated tests.  
 
-According to the pyramid, there should be a lot of unit tests, then fewer amount of integration (service) tests. As for UI tests - their amount should always as minimum as possible.  
+According to the pyramid, the number of **unit tests** should be kept as maximum. The number of **integration (service) tests** should be less than unit. As for **UI tests** - their number should always be as few as possible.  
 
-For monolithic based applications the pyramid suits well.  
+For **monolithic** web based applications this pyramid suits well.  
 
-But what about microservices?  
+But what about **microservices**?  
 
 ### Microservices - here and now... 
 
-Microservices became really a mainstream type of architecture in a recent years. It is used for building a complex, loosely coupled and reliable backend systems.  
+Over the last few years microservices became really a mainstream type of software architecture. It is used for building a complex, loosely coupled and reliable backend systems.  
 
 ![Project Structure]({{ site.baseurl }}/img/20180910/micros2.png)
 
-In a few words: instead of a huge monolithic backend system, which holds all the businees logic and databases, now we have a bunch of independently deployable services, which shares a part of business logic each.  
+In a few words: instead of a huge monolithic backend system, which holds all the business logic and databases, now we have a bunch of independently deployable services, which shares a part of business logic each.  
 
-More about microservices itself and a proper way to build it - you can find in this blog post by Martin Fowler - [Microservices][microservices]. Or in the beautiful reference books written by Sam Newman - [Building Microservices][building]
+More about microservices itself and a proper way to build it - you can find in this blog post by Martin Fowler - [Microservices][microservices]. Or in the beautiful book written by Sam Newman - [Building Microservices][building]
 
 ### Adapting pyramid to new conditions  
 
-As we, as test engineers, are going to test such systems and what is also important - to automate such systems - we need to revise our current approach to structuring test levels.  
+As we are going to test and, what is also important - to automate, such systems - we need to revise our current approach to structuring test levels.  
 
-Each microservice now can be represent as an independent system, which needs to be tested at various levels: unit, integration, component.  
+Each microservice now can be represent as an independent system, which requires testing at various levels: unit, integration, component.  
 
-Also we need to test an integration between services.  
+Integration between individual microservices also should be covered by integration tests.  
 
-And in the end - we also need to verify that the system as a whole is working as expected. Thus, we need to implement end - to - end tests for API or UI levels.  
+Also our system as a whole is expected to be verified. Thus, we need to implement end - to - end tests for API or UI levels.  
 
-As a result, our scheme for testing levels now is slightly different in the realm of microservices.   
+As a result, our scheme for testing levels now is slightly out-of-date in the realm of microservices.   
 
 ![Project Structure]({{ site.baseurl }}/img/20180910/new_pyramid.png)
 
 And yes - this is not a pyramid or even a triangle.  
 
-According to this scheme, we need to test each microservice alone (involving real or mock dependencies).  
+According to this scheme, **each microservice is tested separately** (involving real or mock dependencies).  
 
-We will use contract testing for testing integration between the services.  
+**Contract testing** is used for checking integration between the services.  
 
-Also, we need to remember that our testing approach will not be so effective without any manual testing for our applications, such as exploratory, UX, etc. These types of testing should be performed as well.   
+**UI and API level tests** are also a part of our testing scheme - but their number is kept to minimum and should cover only the critical business flows of the application under test.  
+
+Also, we need to remember that our testing approach will not be solid without any manual testing for our applications. It can be an **exploratory, UX testing**, etc. These types of testing of course should not be neglected by any successfull development team.   
 
 ### Conclusions 
 
-In the next posts I will share some practical tips on how to write automated tests for microservices at different levels.
+In the next posts I am going to share practical tips on how to write automated tests for microservices at different levels.
 We will concentrate mostly on Spring Boot framework and Java programming language, but also make a step back - to try other languages and approaches.  
 
 
