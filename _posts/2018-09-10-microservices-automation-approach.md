@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Tuning up test pyramid for microservices"
-date:   2018-09-11 00:00:47 +0300
+date:   2018-09-10 00:00:47 +0300
 author: "Oleksandr Romanov"
 description: "How canonical testing pyramid is changing as more and more applications adopt microservices architecture"
-header-img: "img/20180911/pyramid3.jpg"
+header-img: "img/20180910/pyramid3.jpg"
 
 ---
 
@@ -14,7 +14,7 @@ _This blog post is a starting point for a series regarding testing and automatin
 
 Maybe, this is the most widespread scheme which is used in a lot of talks about testing and specifically, test automation. 
 
-![Project Structure]({{ site.baseurl }}/img/20180911/old_pyramid.png)
+![Project Structure]({{ site.baseurl }}/img/20180910/old_pyramid.png)
 
 Yes - it is a test automation 'pyramid' (or triangle, if you wish :)) proposed by Mike Cohn in his book ['Succeeding with Agile'][agile].  
 
@@ -30,7 +30,7 @@ But what about microservices?
 
 Microservices became really a mainstream type of architecture in a recent years. It is used for building a complex, loosely coupled and reliable backend systems.  
 
-![Project Structure]({{ site.baseurl }}/img/20180911/micros2.png)
+![Project Structure]({{ site.baseurl }}/img/20180910/micros2.png)
 
 In a few words: instead of a huge monolithic backend system, which holds all the businees logic and databases, now we have a bunch of independently deployable services, which shares a part of business logic each.  
 
@@ -48,7 +48,7 @@ And in the end - we also need to verify that the system as a whole is working as
 
 As a result, our scheme for testing levels now is slightly different in the realm of microservices.   
 
-![Project Structure]({{ site.baseurl }}/img/20180911/new_pyramid.png)
+![Project Structure]({{ site.baseurl }}/img/20180910/new_pyramid.png)
 
 And yes - this is not a pyramid or even a triangle.  
 
