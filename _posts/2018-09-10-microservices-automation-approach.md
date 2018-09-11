@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tuning up test pyramid for microservices"
-date:   2018-09-10 08:00:47 +0300
+date:   2018-09-10 09:00:47 +0300
 author: "Oleksandr Romanov"
 description: "How canonical testing pyramid is changing as more and more applications adopt microservices architecture"
 header-img: "img/20180910/pyramid3.jpg"
