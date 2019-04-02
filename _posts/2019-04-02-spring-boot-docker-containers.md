@@ -102,7 +102,7 @@ For example, if you want container with [Apache Kafka][kafka] set up and ready *
  - before each test (and before application context is loaded), the library searches for an image of the chosen system, downloads it, runs it on the local machine, configures it and provides properties for connection to microservice  
 
  - container with dependency is automatically shut down after the test  
- It is possible to include a set of dependencies at the same time: for example you can run microservice with [MariaDB (SQL)][maria], [Couchbase (NoSQL)][couch], [Kafka (message broker)][kafka] and [Zookeper][zoo]. 
+ It is possible to include a set of dependencies at the same time: for example, typical component test can include [MariaDB (SQL)][maria], [Couchbase (NoSQL)][couch], [Kafka (message broker)][kafka] and some external service if necessary. 
 
  ![Project Structure]({{ site.baseurl }}/img/20190402/component.jpg)
 
