@@ -90,4 +90,5 @@ Every project and product is unique, but they have a lot in common: we all deal 
 Overall the book provides the story of experiences of one particular company. The only difference is the scale. But for any software engineer, it can provide a lot of insights on day-to-day problems and how to at least start to move towards solving them. Nobody can predict - maybe your particular product will burst into the user base and will be massively scaled in a world. So it is better to be prepared for such challenges in advance.
 
 [HGTS]: https://www.amazon.com/Google-Tests-Software-James-Whittaker-ebook/dp/B007MQLMF2/ref=sr_1_1?crid=22FTSHV1XPB61&dchild=1&keywords=how+google+tests+software&qid=1587469752&s=books&sprefix=how+google+test%2Cstripbooks-intl-ship%2C291&sr=1-1
+
 [SEAG]: https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791
