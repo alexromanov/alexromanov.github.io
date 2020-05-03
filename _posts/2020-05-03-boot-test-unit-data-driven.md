@@ -4,29 +4,36 @@ title:  "Magic of Spring Boot testing: Data-driven unit tests"
 date:   2020-05-03 00:00:49 +0300
 author: "Oleksandr Romanov"
 description: "In this blog post I will explain how to use a data-driven approach for unit testing"
-header-img: "img/2020503/input.jpg"
+header-img: "img/20200503/input.jpg"
 
 ---
 
-## Sample application
+## Sample application for the test
 
-For my series of blog posts regarding testing for the Spring Boot application, I've prepared a sample service.  
+For my series of blog posts about Spring Boot testing, I've prepared a sample application.  
 
-One of the service functionality is formatting input values in the form of two sings after decimal points - XX.YY.  
+One of the app functionality is formatting input values in the form of two sings after decimal points - XX.YY.  
 
 It has a UI part as well as a REST API part.
-UI part takes an input:
-![Project Structure]({{ site.baseurl }}/img/2020503/format-ui.png)
-and returns a result:
-![Project Structure]({{ site.baseurl }}/img/2020503/format-result-ui.png)
-For API part the same functionality is implemented for an "/format" endpoint:
-![Project Structure]({{ site.baseurl }}/img/2020503/post-request.png)
-The result object is:
-![Project Structure]({{ site.baseurl }}/img/2020503/post-response.png)
+UI part takes an input:  
+
+![Project Structure]({{ site.baseurl }}/img/20200503/format-ui.png)  
+
+and returns a result:  
+
+![Project Structure]({{ site.baseurl }}/img/20200503/format-result-ui.png)  
+
+For API part the same functionality is implemented for an "/format" endpoint:  
+
+![Project Structure]({{ site.baseurl }}/img/20200503/post-request.png)  
+
+The result object is:  
+
+![Project Structure]({{ site.baseurl }}/img/20200503/post-response.png)
 
 ## Formatter service
 
-The feature code for format operation is a FormatterService.
+The feature code for format operation is in FormatterService class.
 
 It has one method "formatMoney()" which takes a String as an input and returns the value as a formatted String.
 
@@ -89,7 +96,9 @@ Maybe it is a better way how to deal with data-driven unit tests?
 ## Parameterized tests with JUnit
 
 JUNit offers an ability to test method with multiple test data using [Parameterized][PARA] runner.  
-![Project Structure]({{ site.baseurl }}/img/2020503/parameterized-result.png)
+
+![Project Structure]({{ site.baseurl }}/img/20200503/parameterized-result.png)  
+
 The steps for adding a parameterized test for formatter are the following:
 
 1. Declare test data
@@ -142,10 +151,12 @@ The steps for adding a parameterized test for formatter are the following:
 
 4. Mark test class to be executed with Parameterized.class from JUnit
   
-``` java
-@RunWith(Parameterized.class)
-public class FormatterServiceTest {}
-```
+    ``` java
+    @RunWith(Parameterized.class)
+    public class FormatterServiceTest {}
+    ```  
+
+Full source code of the test available [here][Code]
 
 ## Benefits of the data-driven approach
 
@@ -167,3 +178,4 @@ Service code, as well as the test code, can be found in the [Boot-testing-exampl
 
 [BTE]: https://github.com/alexromanov/boot-testing-examples
 [PARA]: https://github.com/junit-team/junit4/wiki/Parameterized-tests
+[Code]: https://github.com/alexromanov/boot-testing-examples/blob/master/src/test/java/alexromanov/boottestingexamples/service/FormatterServiceTest.java
