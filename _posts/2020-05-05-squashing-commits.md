@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Time travelling through Git history"
+title:  "Time traveling through Git history"
 date:   2020-05-05 00:00:49 +0300
 author: "Oleksandr Romanov"
 description: "In this blog post I will show a quick hint on how to keep commit history clean by using squash"
