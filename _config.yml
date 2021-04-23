@@ -1,17 +1,14 @@
 # Site settings
-<<<<<<< HEAD
 title: Test Engineering Notes
 header-img: img/home-bg.jpg
 email: al8x.romanov@gmail.com
 copyright_name: Oleksandr Romanov
 description: "Notes and experiences in test engineering, automation and distributed systems"
-=======
 title: Software Engineering Notes
 header-img: img/home-bg.jpg
 email: al8x.romanov@gmail.com
 copyright_name: Oleksandr Romanov
 description: "Notes and experiences in software engineering, automation and quality"
->>>>>>> 0e37d7a8c3e10ef722e1062ad12e5b639847e9f9
 name: "Oleksandr Romanov's blog"
 baseurl: ""
 url: "https://alexromanov.github.io"
