@@ -4,11 +4,6 @@ header-img: img/home-bg.jpg
 email: al8x.romanov@gmail.com
 copyright_name: Oleksandr Romanov
 description: "Notes and experiences in test engineering, automation and distributed systems"
-title: Software Engineering Notes
-header-img: img/home-bg.jpg
-email: al8x.romanov@gmail.com
-copyright_name: Oleksandr Romanov
-description: "Notes and experiences in software engineering, automation and quality"
 name: "Oleksandr Romanov's blog"
 baseurl: ""
 url: "https://alexromanov.github.io"
