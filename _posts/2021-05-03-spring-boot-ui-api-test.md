@@ -119,7 +119,7 @@ public class WebDriverUiTest {
 Do not forget to include WebDriver configuration before and after tests:  
 
 ``` java
-@BeforeClass
+    @BeforeClass
     public static void beforeAll() {
         WebDriverManager.chromedriver().setup();
     }
@@ -141,7 +141,7 @@ Do not forget to include WebDriver configuration before and after tests:
 Selenium tests are the same as for any web-based application: instantiating the driver and pages, making actions and asserting the results.
 
 ``` java
-      @Test
+    @Test
     public void shouldConvertValue() {
         MainPage mainPage = new MainPage(driver);
         assertThat(mainPage.getPageTitle()).as("Page Title is not equal to expected")
