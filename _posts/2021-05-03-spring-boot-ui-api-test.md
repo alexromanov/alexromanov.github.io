@@ -3,6 +3,7 @@ layout: post
 title:  "Magic of Spring Boot testing: UI and API tests"
 date:   2021-05-03 00:00:49 +0300
 author: "Oleksandr Romanov"
+image: "img/20210503/simple.jpg"
 description: "Few samples of UI and API tests for Spring Boot application"
 header-img: "img/20210503/simple.jpg"
 
