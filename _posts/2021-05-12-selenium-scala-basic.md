@@ -124,7 +124,7 @@ ScalaTest-Selenium provides nice wrapper of WebDriver, but it is not extensible 
 
 But for simple UI tests it is more than enough.  
 
-In the next articles we will even more interesting use cases of using Scala in test automation (also with Selenium)  
+In the next articles we will see even more interesting use cases of using Scala in test automation (also with Selenium)  
 
 Full code samples can be found at src/test/scala/ui package in [code samples][source repo].  
 
