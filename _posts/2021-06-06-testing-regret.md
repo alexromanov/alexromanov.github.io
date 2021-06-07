@@ -16,17 +16,17 @@ Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&utm_med
   
 [Ministry of Testing Bloggers Club][MOT] offered an exciting topic for June - "Your biggest testing regret."  
 
-I started my professional career in September 2011. My first job was as a QC Engineer, but I soon switched to test automation and software development. As of 2021, I worked in different companies - from banking and financial to gaming with variuos technology stacks.  
+I started my professional career in September 2011. My first job was as a QC Engineer, but I soon switched to test automation and software development. As of 2021, I worked in different companies - from banking and finance to gaming with various technology stacks.  
 
-I am not a fan of regrets. So in this blog post, I want to tell more about lessons learned, rather than just a simple regrets.   
+I am not a fan of regrets. So in this blog post, I want to tell more about lessons learned than just simple regrets.   
 
 ## Personal development inside the company
 
-During my first years in university as well as my first years in a full-time job, I hoped that somebody will "magically" create a strict development path for me.  
+During my first years in university and my first years in a full-time job, I hoped that somebody would "magically" create a strict development path for me.  
 
 "Just learn this and that, practice this, and you will become a middle/senior/lead test/automation engineer."   
 
-Unfortunately, it did not happen in university, so I needed to learn a lot by myself. So it did not happen at work.
+Unfortunately, it did not happen in university, so I needed to learn a lot by myself. So it did not occur at work.
 
 What I learned is that the only person responsible for your personal development - is you.  
 It is not your lead, manager, CTO, or career advisor. **It is YOU**. 
@@ -49,18 +49,18 @@ You can discuss your plan with your manager. Ask him/her whether you can apply n
 
 ## Test engineering is considered as non-technical
 
-In many work environments where I worked, testers or automation engineers are considered "not-so-technical" engineers. This is a huge regret for the whole industry. 
+In many work environments where I worked, testers or automation engineers are considered "not-so-technical" engineers. It is a huge regret for the whole industry. 
 
 Testers are just clicking buttons and file bugs. Testers just sent a message "Something is not working" without attaching any logs, environment information. Testers do not provide clear steps to reproduce the issues. Testers can't even give initial thoughts on the root cause of the bugs. 
 
-I also thought in such way for some time...
+I also thought in such a way for some time.
 
 The root cause of such a problem is because most QA courses do not provide a solid technical background on how systems work. The primary purpose of such classes is to teach you how to follow predefined test cases and file bugs. The most "technical" thing is firing a few HTTP calls manually or writing simple WebDriver tests for the Login page. 
 And after all, what the heck do you want to learn from scratch after 1-2 month courses?
 
 As a result, most testers want to move to the development roles as soon as possible. It can be software development, managing positions, business analysts, etc. 
 
-If you stay in testing for more than 10 years, you feel like a "stranger" person. 
+If you stay in testing for more than ten years, you feel like a "stranger" person. 
 
 All of this is why testers themselves do not know or feel that their work can be technical.  
 
