@@ -70,7 +70,7 @@ message HelloReply {
 As you can see, Greeter Service has four methods:  
 
 - **SayHello()** method for unary calls: a client sends a single request to the server and gets a single response back  
-- **ItKeepsTalking()** method for client streaming: the client will send a bunch of messages to the server and after that will wait for a single reply back
+- **ItKeepsTalking()** method for client streaming: the client will send a bunch of messages to the server and, after that, will wait for a single reply back
 - **ItKeepsReplying()** method for server streaming: the client will read a stream of messages from a server until there are no more new messages.  
 - **StreamHellos()** method for bi-directional communication: the client and the server send a stream of messages to each other. 
 
@@ -100,7 +100,7 @@ Test automation process for gRPC based service consists of the following steps:
     $ sbt compile
     ``` 
     in Terminal or choose it from sbt command list in IDE. 
-    As a result all clients generated from proto file can be found at */target/scala-2.13/akka-grpc/main* folder.   
+    As a result, all clients generated from proto file can be found at */target/scala-2.13/akka-grpc/main* folder.   
 
 5. Add [Matchers][matchers] and [ScalaFutures][scala-futures] traits to test class definition.  
 
@@ -165,9 +165,9 @@ Test automation process for gRPC based service consists of the following steps:
         all(messages) should not be ""
     }
     ```
-    Pay attention, that we can't get reponse straight away - we need to wait until Future completes and than get the data by executing **.futureValue**.  
+    Pay attention that we can't get a response straight away - we need to wait until Future completes and then get the data by executing **.futureValue**.  
 
-    Matchers library provides a fluent api for writing assertions - for single values as well as for collections of elements.
+    Matchers library provides a fluent api for writing assertions - for single values and collections of elements.
 
 9. Execute the tests either from IDE or from Terminal  
 
