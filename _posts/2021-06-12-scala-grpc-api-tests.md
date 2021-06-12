@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Automating gRPC services with Scala and akka-grpc"
+title:  "Automation in Scala: API tests for gRPC service"
 date:   2021-06-12 09:00:00 +0300
 author: "Oleksandr Romanov"
 image: "img/20210612/grpc-pic.jpg"
@@ -19,7 +19,7 @@ Photo by <a href="https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medi
 The main idea of the framework is to provide for clients, written in various languages, a possibility to execute remote calls to the server as if it is a local call.  
 
 ![Project Structure]({{ site.baseurl }}/img/20210612/grpc.png) 
-    Photo from <a href="https://grpc.io/docs/what-is-grpc/introduction/">grpc.io docs</a>
+    Picture from <a href="https://grpc.io/docs/what-is-grpc/introduction/">grpc.io docs</a>
 
 The core concept of gRPC is that all communication between server and client is based on [Protocol Buffers][protocol-buffers] defined in proto files. The server will implement and support this interface, and the client will generate and use stub code. 
 

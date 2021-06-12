@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Test Automation In Scala: Basic Selenium Tests"
+title:  "Automation In Scala: Basic Selenium Tests"
 date:   2021-05-12 00:00:00 +0300
 author: "Oleksandr Romanov"
 image: "img/20210512/selenium-scala.jpg"
