@@ -30,7 +30,7 @@ In this blog post, I will share my insights after reading this paper.
 
 ## What is distributed concurrency bug?
 
-![Project Structure]({{ site.baseurl }}/img/20210620/dc-bug.png)
+![Project Structure]({{ site.baseurl }}/img/20210621/dc-bug.png)
 
 The points of the study were four distributed systems: 
 - [Cassandra][cassandra]
