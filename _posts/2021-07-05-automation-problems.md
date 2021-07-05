@@ -71,16 +71,22 @@ But if you are a senior engineer now and still see many such questions asked, he
 Here what you can do:
 1. **Learn the programming language and technology stack of the system you are working with.** Which framework do developers use, which database? How is the system deployed? How is your data replicated across the system? What are third parties to an application under test? The more you know how the system works, the faster you can investigate and fix the failures. And the better tests you can create.  
 
-2. **Investigate more about different levels of testing: unit, component, integration, contract.** Do not stick only at end-to-end UI or API tests. What are their pros and cons? Why can't you use such tests in your project? What blocks you from adding such tests?  
+2. **Investigate more about different levels of testing: unit, component, integration, contract.** What are their pros and cons? Why can't you use such tests in your project? What blocks you from adding such tests?  
 
-3. **Discover the root causes of the issues together with developers and DevOps engineers.** Is it possible to find the bug before the UI tests caught it? Where do you have "holes" in code coverage? Which actions can you do now to prevent such issues in the future?  
+3. **Discover the root causes of the issues together with developers and DevOps engineers.** Is it possible to find the bug before the UI tests caught it? Which actions can you do now to prevent such issues in the future? Where do you have "holes" in code coverage? 
 
 4. **Do not consider your job as a "fast fire-and-forget consultancy. (Unless you are a consultant)"** Always ask stakeholders why they need to have test automation. Which value do they want to get from such tests? How can you help them to release faster and more reliable? What is the product vision for upcoming years, and how automation fits in?  
 
-5. **Explore how other companies solve issues with test flakiness, stability, scalability.** In most cases, your application is not unique - so you can find out that your current struggles have already been solved by some open-source tool that you can use.  
+5. **Explore how other companies solve issues with test flakiness, stability, scalability.** In most cases, your application is not a unique - so you can find out that your current struggles have already been solved by some open-source tool that you can use.  
 
 6. **Do not try to use every fancy tool on the market.** Start with careful evaluation and compare different tools in the segment. Do not believe that automated tests can be recorded once and be executed forever. Maintenance always matters!  
 
 7. **Always think about which impact do your engineering efforts make on the product.** Is it make the life of other developers easier? Does it help to investigate issues faster?   
+
+## Conclusions
+
+Every team member can be a source of automation problems. Maybe it is a test manager who wants to change a process and tools. Perhaps it is a developer who doesn't like to share information on how the product works internally. Or it can be a test automation engineer who wants quick results without any effort.  
+
+Anyway, it is up to you to identify and fix such problems. Good luck in fixing it!  
 
 **Have you ever faced any of these problems?**
