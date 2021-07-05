@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Modern problems with test automation"
+title:  "Modern Problems With Test Automation"
 date:   2021-07-05 09:00:00 +0300
 author: "Oleksandr Romanov"
 image: "img/20210705/problem.jpg"
