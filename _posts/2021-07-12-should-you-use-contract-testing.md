@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Should you use contract testing?"
+title:  "Should You Use Contract Testing?"
 date:   2021-07-12 09:00:00 +0300
 author: "Oleksandr Romanov"
 image: "img/20210712/contract.jpg"
