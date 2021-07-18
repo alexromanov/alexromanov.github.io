@@ -56,8 +56,8 @@ On the other hand, the end-to-end test will provide an additional check of broke
 Given the number of services (hundreds) and updates per day (thousands or more) - each developer should wait for an entire deployment to find the end-to-end test results.  
 
 **Maybe there is another way of getting information about broken integration? It turns out that it exists.**
- 
-## Contract testing to the rescue! 
+
+## Contract testing to the rescue
 
 Contract testing is another approach to test integration between two counterparties.  
 
@@ -83,7 +83,7 @@ If the developer wants to change to Bonus Conference service API (the Producer),
 
 After the developer changes the contract, all consumers will be notified about the change. So they need either approve the change (handle it in their services) or comment that this change breaks the integration.  
 
-##  Test types analysis  
+## Test types analysis  
 
 Let's compare three types of tests: unit, contract, and end-to-end API.
 
@@ -100,7 +100,7 @@ Let's compare three types of tests: unit, contract, and end-to-end API.
 * **Functionality verification.** Both unit and end-to-end tests verify functionality. The main goal of contract tests is to check only the format of communication between two parts.  
 
 * **Team collaboration.** To implement unit tests, the developer does not need to communicate with other developers. Contract and end-to-end tests push the developer to communicate and to think about the impact of changes.  
- 
+
 ## Should I use contract testing?
 
 **Contract tests are not a substitution to the unit or end-to-end tests.** It is just one type of test that can be performed.  
@@ -109,14 +109,19 @@ Let's compare three types of tests: unit, contract, and end-to-end API.
 
 If contract testing workflow is implemented correctly - ***it is possible to minimize end-to-end tests and speed up the development process.***
 
-So the crucial question remains: **"Should I use contract testing?"** 
+So the crucial question remains: **"Should I use contract testing?"**  
 
-You will not get a value from the contract testing if: 
+You will not get a value from the contract testing if:  
+
 * the coverage of unit tests is low
+
 * the number of end-to-end tests is close to zero
+
 * there is a lack of skills for setting up the project and writing the contracts
+
 * there is a lack of dedication to change a process of delivery
-* the communication between teams is broken (e.g., blaming each other for integration issues) 
+
+* the communication between teams is broken (e.g., blaming each other for integration issues)
 
 ## Conclusions  
 
@@ -125,5 +130,5 @@ Contract tests are not a "silver bullet" which provides only the benefits.
 It requires many efforts for configuration; it requires even more efforts to change the developer "culture." With contract tests, you can't make hidden changes, silently push it and close the Jira as soon as possible.  
 
 And most important: contract testing forces you to think more about the consequences of each change that goes to production.  
- 
-**Have you already tried contract testing for your projects? Did you get any benefits?** 
+
+**Have you already tried contract testing for your projects? Did you get any benefits?**  
