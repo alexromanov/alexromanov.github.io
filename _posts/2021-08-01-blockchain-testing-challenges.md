@@ -68,7 +68,7 @@ Here is the sample architecture diagram of the blockchain-based application:
 
 **Knowledge.** To develop and test blockchain-based applications, engineers need to know about various domains (technical, non-technical, legal). But it is hard to find people with such knowledge on the market. E.g., in our company, test engineers need to know distributed systems, cryptography, blockchain, testing, programming, math, finance.  
 
-**Variety.** You can't just "learn" one blockchain: there is an ecosystem of tools for each particular blockchain. Some blockchains use unique programming languages for smart contracts ([Solidity](https://docs.soliditylang.org/en/v0.8.6/) for Ethereum or [Plutus](https://plutus.readthedocs.io/en/latest/plutus/tutorials/plutus-playground.html) for Cardano) - so you need to learn them too.  
+**Variety.** For now it is almost [40 different blockchains](https://docs.google.com/spreadsheets/d/1OO06RZ7vw8-Hij8ZxB68FaRYRtQEz3GifnLDNwW8sTs/edit#gid=1051902784) available on the market. You can't just "learn" one blockchain: there is an ecosystem of tools for each particular blockchain. Some blockchains use well-known programming languages like C++, Go, Javascript or Java for implementing smart contracts. Another - use their unique programming languages ([Solidity](https://docs.soliditylang.org/en/v0.8.6/) for Ethereum or [Plutus](https://plutus.readthedocs.io/en/latest/plutus/tutorials/plutus-playground.html) for Cardano) - so you need to learn them too.  
 
 **Standards.** Additionally, there is a lack of guiding procedures, standards, or strategies in designing, developing, and testing blockchain-based applications
 
@@ -82,7 +82,9 @@ Here is the sample architecture diagram of the blockchain-based application:
  
 ## Immutability
 
-The blockchain is an immutable and open data structure (unless it is not a permissioned one). So as soon as any change is deployed to the network, you can't reverse it back. Seriously. All the test data will remain on the chain forever :). Moreover, the test data can be seen by any person via transaction explorers.
+The blockchain is an immutable and open data structure (unless it is not a permissioned one). So as soon as any change is deployed to the network, you can't reverse it back.  
+Seriously. All the test data will remain on the chain forever :).  
+Moreover, the test data can be seen by any person via transaction explorers.
 
 **Test data** need special care as it is available in a public blockchain. Make sure that you don't use any sensitive information in tests.
 
