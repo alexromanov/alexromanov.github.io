@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Challenges in testing blockchain-based applications"
-date:   2021-08-01 09:00:00 +0300
+date:   2021-08-02 09:00:00 +0300
 author: "Oleksandr Romanov"
-image: "img/20210801/bc.jpg"
+image: "img/20210802/bc.jpg"
 description: "Why is blockchain testing not an easy thing?"
 summary: "Why is blockchain testing not an easy thing?"
-header-img: "img/20210801/bc.jpg"
+header-img: "img/20210802/bc.jpg"
 
 ---
 
@@ -17,7 +17,7 @@ Photo by <a href="https://unsplash.com/@blueskin?utm_source=unsplash&utm_medium=
 [Blockchain](https://blockgeeks.com/guides/what-is-blockchain-technology) is a linked list of records called blocks.  
 The blocks are connected using [cryptography](https://en.wikipedia.org/wiki/Cryptography): each block contains the previous block's hash and information about current transactions.  
 
-![Project Structure]({{ site.baseurl }}/img/20210801/blockchain.png) 
+![Project Structure]({{ site.baseurl }}/img/20210802/blockchain.png) 
 
 The blocks are immutable to change and are replicated across nodes in the blockchain [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) network.  
 
@@ -37,7 +37,7 @@ Modern blockchain-based applications do not implement blockchain "from scratch".
 
 Here is the sample architecture diagram of the blockchain-based application:
 
-![Project Structure]({{ site.baseurl }}/img/20210801/bc-app.png)
+![Project Structure]({{ site.baseurl }}/img/20210802/bc-app.png)
 
 
 **According to the diagram, the following components need to be tested:**
