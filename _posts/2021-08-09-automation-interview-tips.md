@@ -55,7 +55,7 @@ This blog post will share a few tips from my experience ( as a candidate and int
   It will help you to get points where you need more attention and practice. 
 
   I know only a few candidates that asked me for a technical feedback. As a result they progressed much faster than other engineers. 
-- always read the company (job) profile and prepare to interview according to that profile. 
+- **always read the company (job) profile and prepare to interview according to that profile.** 
 
   I failed one interview because I did not prepare myself for UI test automation questions (even though the company's leading product was websites and UI web technologies).
 - **publish some code to Github or participate in open-source projects.** 
