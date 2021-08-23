@@ -19,7 +19,7 @@ There are a lot of tools on the market, but not all of them support communicatio
 
 After searching the Internet for some time, I found a few options:
 
-- [Gatling]() with [gRPC plugin](https://github.com/phiSgr/gatling-grpc).
+- [Gatling](https://gatling.io/) with [gRPC plugin](https://github.com/phiSgr/gatling-grpc).
 
     The plugin allows to test gRPC services by making single calls and client, server, and bi-directional streaming; Scripts are written in Scala language.
 
