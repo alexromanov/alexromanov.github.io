@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Guide on how to put gRPC services under load with Gatling"
-date:   2021-08-22 09:00:00 +0300
+title:  "Load testing for gRPC services with Gatling"
+date:   2021-08-23 09:00:00 +0300
 author: "Oleksandr Romanov"
-image: "img/20210822/load.jpg"
+image: "img/20210823/load.jpg"
 description: "Examples of load tests for grpc services"
 summary: "Examples of load tests for grpc services"
-header-img: "img/20210822/load.jpg"
+header-img: "img/20210823/load.jpg"
 
 ---
 
@@ -184,9 +184,9 @@ sbt "gatling:testOnly *.BiDiStreamingSimulation"
 
 You can find Gatling test reports in the /target/gatling folder.
 
-![Project Structure]({{ site.baseurl }}/img/20210822/grpcGatling.png)
+![Project Structure]({{ site.baseurl }}/img/20210823/grpcGatling.png)
 
-![Project Structure]({{ site.baseurl }}/img/20210822/serverGatling.png)
+![Project Structure]({{ site.baseurl }}/img/20210823/serverGatling.png)
 
 ## Conclusions
 
