@@ -55,5 +55,5 @@ In my opinion, test engineers who deal with distributed systems in one way or an
 - how can the risk of failure be reduced? (hard level)
 
 ## Conclusion
-Distributed systems are almost everywhere in a modern technology workld. It is better to know how to they can fail - so your testing will be more useful to the product. 
+Distributed systems are almost everywhere in a modern technology world. If you know how such systems can fail - you will be able to prevent a lot of such problems in your products.
 
