@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Quick comparison of gRPC testing tools"
-date:   2022-02-10 09:00:00 +0300
+date:   2022-02-11 09:00:00 +0300
 author: "Oleksandr Romanov"
-image: "img/20220210/tools.jpg"
+image: "img/20220211/tools.jpg"
 description: "Which tool to choose for testing gRPC services?"
 summary: "Which tool to choose for testing gRPC services?"
-header-img: "img/20220210/tools.jpg"
+header-img: "img/20220211/tools.jpg"
 
 ---
 
@@ -32,25 +32,25 @@ An example of a simple gRPC server to run locally can be taken from my [Github](
 
 ### Tools comparison
 
-![Project Structure]({{ site.baseurl }}/img/20220210/compare.png)
+![Project Structure]({{ site.baseurl }}/img/20220211/compare.png)
 
 All four tools are **easily installed** as desktop applications (in my case, on Windows 11). Also I want to say, the all four tools have a great support for **gRPC streaming**. [k6 - when you will have this feature?](https://k6.io/)
 
 In **BloomRPC**, I did not find how to import proto files via server reflection. But if you want to import it as files - it works perfectly fine. In other tools, both imports work fine.
 
-![Project Structure]({{ site.baseurl }}/img/20220210/bloom.png)
+![Project Structure]({{ site.baseurl }}/img/20220211/bloom.png)
 
 It's rather inconvenient that **Insomnia** can't get a request template based on the proto schema. You have to search for it yourself and insert it as a JSON file. Other tools are OK with it.
 
-![Project Structure]({{ site.baseurl }}/img/20220210/insomnia.png)
+![Project Structure]({{ site.baseurl }}/img/20220211/insomnia.png)
 
 **Kreya.app** has a killer feature - you can use the built-in test data sampler - for strings, UUID, and other fundamental data types.
 
-![Project Structure]({{ site.baseurl }}/img/20220210/kreya.png)
+![Project Structure]({{ site.baseurl }}/img/20220211/kreya.png)
 
 **Postman** has not yet delivered the ability to save created requests. But this is only a beta - so I hope this defect will be fixed during the release. Additionally, it is impossible to import a directory of proto files (or a set of dependent proto files at once). So, you need to compile a set of files to import it for now. But it works. 
 
-![Project Structure]({{ site.baseurl }}/img/20220210/postman.png)
+![Project Structure]({{ site.baseurl }}/img/20220211/postman.png)
 
 For **Postman** and **Insomnia**, gRPC is just one of the many features. HTTP API testing in both tools is the primary function. Plus, they have a lot of additional features for easy writing of API tests.
 **Kreya** and **BloomRPC** are strictly working with gRPC.
