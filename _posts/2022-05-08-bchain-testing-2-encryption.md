@@ -14,7 +14,7 @@ Photo by [Mauro Sbicego on Unsplash](https://unsplash.com/photos/4hfpVsi-gSg?utm
 
 This is the second blog post in the [**"Blockchain for Test Engineers"**](https://alexromanov.github.io/2022/04/24/blockchain-testing-mindmap/) series.  
 
-We will dive into a fascinating world of ciphers and encryption in this post. 
+In the previous post we talked about **[Hashing](https://alexromanov.github.io/2022/05/01/bchain-testing-1-hashing/)**. Today we will dive into a fascinating world of ciphers and encryption in this post. 
 
 ### The message to a friend
 

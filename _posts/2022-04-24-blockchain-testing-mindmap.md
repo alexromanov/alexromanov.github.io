@@ -19,6 +19,10 @@ But the more I learn about this fascinating technology (and technologies around 
 
 So I decided to share my knowledge with other test engineers and start a series of blog posts: **"Blockchain for Test Engineers."**
 
+The series so far:
+- **[Hashing](https://alexromanov.github.io/2022/05/01/bchain-testing-1-hashing/)**
+- **[Encryption](https://alexromanov.github.io/2022/05/08/bchain-testing-2-encryption/)**
+
 ### The Roadmap
 
 In the series of blog posts, we will learn everything you need to know to understand what blockchain is and how it works. Because you can't test something effectively without understanding how it works. For our journey, I prepared a roadmap of topics we will cover. 
