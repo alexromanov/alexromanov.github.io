@@ -22,6 +22,7 @@ So I decided to share my knowledge with other test engineers and start a series 
 The series so far:
 - **[Hashing](https://alexromanov.github.io/2022/05/01/bchain-testing-1-hashing/)**
 - **[Encryption](https://alexromanov.github.io/2022/05/08/bchain-testing-2-encryption/)**
+- **[Digital Signature](https://alexromanov.github.io/2022/05/15/bchain-testing-3-signatures/)**
 
 ### The Roadmap
 
