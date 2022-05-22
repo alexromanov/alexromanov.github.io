@@ -19,10 +19,11 @@ But the more I learn about this fascinating technology (and technologies around 
 
 So I decided to share my knowledge with other test engineers and start a series of blog posts: **"Blockchain for Test Engineers."**
 
-The series so far:
+Posts in the series:
 - **[Hashing](https://alexromanov.github.io/2022/05/01/bchain-testing-1-hashing/)**
 - **[Encryption](https://alexromanov.github.io/2022/05/08/bchain-testing-2-encryption/)**
 - **[Digital Signature](https://alexromanov.github.io/2022/05/15/bchain-testing-3-signatures/)**
+- **[Distributed Systems](https://alexromanov.github.io/2022/05/22/bchain-test-4-distributed-systems/)**
 
 ### The Roadmap
 
