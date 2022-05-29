@@ -24,7 +24,7 @@ Series:
 - **[Encryption](https://alexromanov.github.io/2022/05/08/bchain-testing-2-encryption/)**
 - **[Digital Signature](https://alexromanov.github.io/2022/05/15/bchain-testing-3-signatures/)**
 - **[Distributed Systems](https://alexromanov.github.io/2022/05/22/bchain-test-4-distributed-systems/)**
-- **[Blockchain for Test Engineers: P2P networks and Gossip protocol](https://alexromanov.github.io/2022/05/29/bchain-test-5-p2p-gossip-protocols/)**
+- **[P2P networks and Gossip protocol](https://alexromanov.github.io/2022/05/29/bchain-test-5-p2p-gossip-protocols/)**
 
 ### The Roadmap
 
