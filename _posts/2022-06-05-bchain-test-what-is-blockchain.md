@@ -14,7 +14,7 @@ Photo by [Robynne Hu on Unsplash](https://unsplash.com/photos/HOrhCnQsxnQ?utm_so
 
 This is the sixth blog post in the [**"Blockchain for Test Engineers"**](https://alexromanov.github.io/2022/04/24/blockchain-testing-mindmap/) series.  
 
-We have explored concepts from [hashing](https://alexromanov.github.io/2022/05/01/bchain-testing-1-hashing/), [encryption](https://alexromanov.github.io/2022/05/08/bchain-testing-2-encryption/), and [distributed systems](https://alexromanov.github.io/2022/05/22/bchain-test-4-distributed-systems/) in the previous posts. Now it's time to apply this knowledge and understand what blockchain is.
+We have explored concepts from **[hashing](https://alexromanov.github.io/2022/05/01/bchain-testing-1-hashing/)**, **[encryption](https://alexromanov.github.io/2022/05/08/bchain-testing-2-encryption/)**, and **[distributed systems](https://alexromanov.github.io/2022/05/22/bchain-test-4-distributed-systems/)** in the previous posts. Now it's time to apply this knowledge and understand what blockchain is.
 
 When I first started to google on this topic, I found many articles, videos, and even courses dedicated to the blockchain. But all these resources eventually fell into two categories: **too superficial** or **too deep.** There was nothing in between.
 
@@ -34,7 +34,7 @@ In addition, the bank has every right to freeze your funds if it considers them 
 Don't you think that requires a lot of trust and single-handedly manages your accounts?
 
 ## What is blockchain?
-[The original idea of blockchain](https://bitcoin.org/bitcoin.pdf) emerged as an alternative to regular bank payments. (Of course, the blockchain is not only used for financial transactions - but let's start with them). 
+**[The original idea of blockchain](https://bitcoin.org/bitcoin.pdf)** emerged as an alternative to regular bank payments. (Of course, the blockchain is not only used for financial transactions - but let's start with them). 
 
 ![Project Structure]({{ site.baseurl }}/img/20220605/blockchain.png)
 
@@ -65,7 +65,9 @@ The block headers contain:
 ### Why store the hash of the previous block? 
 Here is the beauty and power of the hashing. It helps to ensure the consistency of the blockchain and prevent changes.
 
-Imagine that an attacker wants to change the content of a transaction that belongs to block one. The change in the transaction will change the hash of the transaction. Then the change of transaction hash will change the hash of block one. If an attacker wants to spread a new block across the network, he must modify the other blocks after block one. (because they are linked). In addition - the attacker then needs to spread a new chain of blocks (modified) across all the nodes and force everybody to use an updated version of the chain. Given the number of nodes in the network, it can be a challenging and expensive task. 
+Imagine that an attacker wants to change the content of a transaction that belongs to block one. The change in the transaction will change the hash of the transaction. Then the change of transaction hash will change the hash of block one. If an attacker wants to spread a new block across the network, he must modify the other blocks after block one. (because they are linked).  
+
+In addition - the attacker then needs to spread a new chain of blocks (modified) across all the nodes and force everybody to use an updated version of the chain. Given the number of nodes in the network, it can be a challenging and expensive task. 
 Why expensive? An attacker needs to re-create many blocks, which takes resources and time. 
 
 Every block and every transaction are digitally signed. Any network user can verify this signature and ensure there were no fakes. So it will be suspicious if all blocks in the "attackers chain" are signed by a single user. 
@@ -89,7 +91,8 @@ From time to time, the node forms a new block of transactions. The node signs th
 ![Project Structure]({{ site.baseurl }}/img/20220605/mining_block.png)
 
 Each node with a new potential block starts a race with the other nodes who prepared a candidate block. 
-The ultimate goal of each miner node is to make a special kind of block hash. For example, it can be a certain amount of zeroes at the beginning of the hash value. 
+The ultimate goal of each miner node is to make a special kind of block hash. For example, it can be a certain amount of zeroes at the beginning of the hash value.  
+
 The miner adds a number (nonce) to the block to find such a hash. If the hash is not equal to the desired one - the miner increments the nonce and does it again. This task is simple but resource-intensive - you need to make a tremendous amount of trial and error by brute force. This process is called mining.
 
 The first node that finds the correct nonce and sends the block to the network - receives a reward in coins plus optional fees from each transaction. The reward is not immediately accessible to the user but only after adding some amount of new blocks. 
@@ -114,7 +117,7 @@ If everything is in order with the block - it starts to spread over the network 
 
 ![Project Structure]({{ site.baseurl }}/img/20220605/propagate_block.png)
 
-Sooner or later, nodes will distribute the new block over the network using some protocol (for example, it can be [Gossip protocol](https://alexromanov.github.io/2022/05/29/bchain-test-5-p2p-gossip-protocols/)).
+Sooner or later, nodes will distribute the new block over the network using some protocol (for example, it can be **[Gossip protocol](https://alexromanov.github.io/2022/05/29/bchain-test-5-p2p-gossip-protocols/)**).
 
 In Bitcoin, a new block appears on the network every 10 minutes (the internal mining algorithm checks the complexity of the mining for all peers and adjusts it every 2048 blocks). But this does not mean at all that your transaction will be in the block in 10 minutes. But more on that next time.
 
