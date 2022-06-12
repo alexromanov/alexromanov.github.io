@@ -61,8 +61,10 @@ I will divide the problems into two large groups.
 The lack of knowledge can take multiple forms.
 
 #### Technical knowledge
-In interviews, senior candidates often quickly answer any questions about testing. They can draw a "testing pyramid or any figure you want" for you, tell you all the test design techniques in the world, and write the perfect bug report. But candidates quickly lose confidence when you ask questions about fundamental technical aspects (such as how HTTP or networks work). 
-You can tell me that not every project requires specific knowledge. That's true. But test engineers should know (or at least be aware of) the fundamental technical knowledge. Ideally, a little bit deeper than the first link in the Google search. 
+In interviews, senior candidates often quickly answer any questions about testing. They can draw a "testing pyramid or any figure you want" for you, tell you all the test design techniques in the world, and write the perfect bug report. But candidates quickly lose confidence when you ask questions about fundamental technical aspects (such as how HTTP or networks work).  
+
+You can tell me that not every project requires specific knowledge. That's true. But test engineers should know (or at least be aware of) the fundamental technical knowledge. Ideally, a little bit deeper than the first link in the Google search.  
+
 90% of modern systems work with the network in one way or another, send messages or requests, and use the database or distributed storage. Multiple layers of abstractions can cover it - but in a nutshell - it all works similarly.  
 
 #### Programming and architecture
