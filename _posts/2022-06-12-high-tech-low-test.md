@@ -14,7 +14,7 @@ Photo by [Leyre on Unsplash](https://unsplash.com/photos/71SHXwBLp5w?utm_source=
 
 I have been working in test automation and development for more than ten years. I've seen good projects, and I've seen awful ones.  
 
-In this blog post, I want to highlight the problems I see in the testing industry and how we all can fix it. (You may have a different experience - so let's share it in the comments!)
+In this blog post, I want to highlight the problems I see in the testing industry and how we all can fix it. (You may have a different experience - so let's share it in the comments!). This is a text version of **[my talk that I gave at Abu Dhabi MoT meetup at the beginning of 2022](https://youtu.be/jigPyy6wSfk)**. 
 
 ## What has changed in the industry in 10 years
 
