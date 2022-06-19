@@ -26,6 +26,7 @@ Series:
 - **[Distributed Systems](https://alexromanov.github.io/2022/05/22/bchain-test-4-distributed-systems/)**
 - **[P2P networks and Gossip protocol](https://alexromanov.github.io/2022/05/29/bchain-test-5-p2p-gossip-protocols/)**
 - **[What is blockchain?](https://alexromanov.github.io/2022/06/05/bchain-test-what-is-blockchain/)**
+- **[Merkle Trees](https://alexromanov.github.io/2022/06/19/bchain-test-7-merkle-tree/)**
 
 ### The Roadmap
 
