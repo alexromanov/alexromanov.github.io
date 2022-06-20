@@ -4,8 +4,8 @@ title:  "Blockchain for Test Engineers: Merkle Trees"
 date:   2022-06-19 09:00:00 +0300
 author: "Oleksandr Romanov"
 image: "img/20220619/roots.jpg"
-description: "What is Merkle Trees - from tester's point view"
-summary: "What is Merkle Trees - from tester's point view"
+description: "What are Merkle Trees - from tester's point view"
+summary: "What are Merkle Trees - from tester's point view"
 header-img: "img/20220619/roots.jpg"
 
 ---
