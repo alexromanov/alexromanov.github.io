@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The most complicated automation tests"
+title:  "The most complicated automated tests"
 date:   2022-07-17 09:00:00 +0300
 author: "Oleksandr Romanov"
 image: "img/20220717/challenge.jpg"
