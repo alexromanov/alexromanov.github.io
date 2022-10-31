@@ -4,8 +4,8 @@ title:  "On choosing and changing languages for test automation"
 date:   2022-10-30 09:00:00 +0300
 author: "Oleksandr Romanov"
 image: "img/20221030/choice.jpg"
-description: "How to choose language for automation? Does it worth to change between langauges and tech stack?"
-summary: "How to choose language for automation? Does it worth to change between langauges and tech stack?"
+description: "How to choose language for automation? Does it worth to change between languages and tech stacks?"
+summary: "How to choose language for automation? Does it worth to change between languages and tech stacks?"
 header-img: "img/20221030/choice.jpg"
 
 ---
